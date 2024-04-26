@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <Button
+            android:id="@+id/request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:minWidth="250dp"
+            android:gravity="center"
+            android:background="@color/teal_200"
+            android:text="Make a resource Request"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/white" />
+    <Button
+        android:id="@+id/newFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="250dp"
+        android:gravity="center"
+        android:background="@color/teal_200"
+        android:layout_marginTop="10dp"
+        android:text="New Fragment"
+        app:layout_constraintTop_toBottomOf="@id/request"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white" />
+    <Button
+            android:id="@+id/timing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:minWidth="250dp"
+            android:gravity="center"
+            android:background="@color/teal_200"
+            android:layout_marginTop="10dp"
+            android:text="Click to emit Custom timing"
+            app:layout_constraintTop_toBottomOf="@id/newFragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/crash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/teal_200"
+        android:gravity="center"
+        android:minWidth="250dp"
+        android:text="Click to Crash"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/timing" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
